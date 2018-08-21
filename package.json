@@ -1,0 +1,14 @@
+{
+  "name": "AndroidAndReactApplication",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "build": "babel src -d lib"
+  },
+  "dependencies": {
+    "react": "16.4.2",
+    "react-native": "0.55.4"
+  }
+}
