@@ -1,8 +1,8 @@
 package com.example.csy.androidandreactapplication;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,6 +24,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ReactTwoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.tv_fragment_one).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReactUseInFragmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.tv_fragment_two).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ReactUseInFragmentTwoActivity.class);
                 startActivity(intent);
             }
         });
