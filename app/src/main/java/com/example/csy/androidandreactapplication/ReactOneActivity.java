@@ -49,7 +49,10 @@ public class ReactOneActivity extends AppCompatActivity implements DefaultHardwa
         // 注意这里的MyReactNativeApp必须对应“index.js”中的
         // “AppRegistry.registerComponent()”的第一个参数
 
-        mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
+        //传参
+        Bundle bundle=new Bundle();
+        bundle.putString("param","我是从ReactOneActivity传过来的");
+        mReactRootView.startReactApplication(mReactInstanceManager, "MyReactNativeApp", bundle);
         setContentView(mReactRootView);
     }
 
