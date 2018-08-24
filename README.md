@@ -1,5 +1,5 @@
-# AndroidAndReactApplication
-将本机集成到活动中
+#AndroidAndReactApplication
+一个简单的集成React Native动手小demo
 
 ReactOneActvity--Activity集成React Native，添加布局的方式
 ----
